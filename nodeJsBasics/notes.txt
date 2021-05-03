@@ -13,3 +13,9 @@ Definition:
     Thread: smallest sequence of programmed instructions to be executed [to do list]
     a thread is within a node process, within which is the order of events
     nodejs is single threaded process always
+
+    LibUV: a tool that enforces an async event-driven style of programming
+    core job: provides event loop
+
+    Event Loop: allows node.js to perform non-blocking I/O (despite Javascript being singl threaded)
+    by offloading opertions to the sytem kernel whenever possible
