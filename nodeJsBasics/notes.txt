@@ -9,6 +9,10 @@ Libraries:
 
 node's thread is a v8 call stack[Thread]
 
+The call Stack[single thread]
+LibUV[4 thread]
+underlying OS
+
 Definition:
     Thread: smallest sequence of programmed instructions to be executed [to do list]
     a thread is within a node process, within which is the order of events
