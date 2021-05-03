@@ -1,0 +1,15 @@
+Node dependencies:
+Libraries: 
+    Javascript engine: a library that takes Javascript code and executes it.
+        currently using V8 Engine, which is written in C++
+        many options for Javascript engines.
+        V8 is also used for the Chrome browser
+    Async code handler: a library that implements the node.js event loop and all of the async behaviours of the platform
+        node uses LibUV, written in C.
+
+node's thread is a v8 call stack[Thread]
+
+Definition:
+    Thread: smallest sequence of programmed instructions to be executed [to do list]
+    a thread is within a node process, within which is the order of events
+    nodejs is single threaded process always
