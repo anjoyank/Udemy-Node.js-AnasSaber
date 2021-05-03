@@ -5,6 +5,16 @@ const http = require('http');
 //using dynamic value here and in the server.listen method
 const port = 5050;
 
+
+//when set to true simulates functioning DBconnection
+//false simulates failure.
+const dbConnection = true;
+
+//method will automatically close the program if the DBconn is "lost"
+if(!dbConnection){
+    process.exit(1);
+}
+
 //createServer method creates an instance of Server class
 //createServer argument is callback function that runs whenever user sends request
 //response objects uses end method doing 2 tasks: end hanging state and send something to client
@@ -35,7 +45,7 @@ const server = http.createServer((req, res) => {
             welcome to the user page
             `);
         break;
-        //if page doesn't load:
+        //if page doesn't load or user enters invalid path:
         default:
             res.end(`not found`);
     };
