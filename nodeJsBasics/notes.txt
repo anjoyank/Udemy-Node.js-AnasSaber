@@ -16,6 +16,11 @@ underlying OS
 nodejs uses CommonJS module system
 modules:    1. core modules come with node.js 2. npm modules installed. 3. user created modules
 
+HANDLING Async function
+    callBack
+    promises
+    async/await
+
 Definition:
     Thread: smallest sequence of programmed instructions to be executed [to do list]
     a thread is within a node process, within which is the order of events
