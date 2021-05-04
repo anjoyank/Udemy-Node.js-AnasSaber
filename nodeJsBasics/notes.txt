@@ -13,6 +13,9 @@ The call Stack[single thread]
 LibUV[4 thread]
 underlying OS
 
+nodejs uses CommonJS module system
+modules:    1. core modules come with node.js 2. npm modules installed. 3. user created modules
+
 Definition:
     Thread: smallest sequence of programmed instructions to be executed [to do list]
     a thread is within a node process, within which is the order of events
@@ -23,3 +26,12 @@ Definition:
 
     Event Loop: allows node.js to perform non-blocking I/O (despite Javascript being singl threaded)
     by offloading opertions to the sytem kernel whenever possible
+
+    setImmediate(cb): event loop method: special timer that runs in a separate phase of event loop[check]
+
+    process.nextTick(cb): event loop method: runs after current operation on JS stack runs to completion,
+    and before event loop is allowed to continue
+
+    Module: functionality system organzed in one or more files. can be reused easily by requiring it
+
+    Module Loader: a tool that imports a module to the current process.
